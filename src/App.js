@@ -24,8 +24,8 @@ function App() {
         <Route exect path="/NavMenu" element={<NavMenu />} />
         <Route exect path="/Crud" element={<Crud />} />
         <Route exect path="/AddItem" element={<AddItem />} />
-        <Route exect path="/Veiw" element={<Veiw />} />
-        <Route exect path="/Edit" element={<Edit />} />
+        <Route exect path="/View/:id" element={<Veiw />} />
+        <Route exect path="/Edit/:id" element={<Edit />} />
         <Route exect path="/Delete" element={<Delete />} />
       </Routes>
     </>

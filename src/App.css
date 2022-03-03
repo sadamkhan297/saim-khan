@@ -971,6 +971,19 @@ tr:nth-child(even) {
   background: none;
   color: black;
 }
+.add-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.add-container2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* align-items: center; */
+}
 @media only screen and (max-width: 800px) {
   .havbrgr {
     display: inline-flex;
