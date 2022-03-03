@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/saim-khan/static/css/main.29ecb682.css",
+    "main.js": "/saim-khan/static/js/main.d431aa9d.js",
+    "static/media/pic.png": "/saim-khan/static/media/pic.8226ae928ccc21580811.png",
+    "index.html": "/saim-khan/index.html",
+    "main.29ecb682.css.map": "/saim-khan/static/css/main.29ecb682.css.map",
+    "main.d431aa9d.js.map": "/saim-khan/static/js/main.d431aa9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29ecb682.css",
+    "static/js/main.d431aa9d.js"
+  ]
+}
