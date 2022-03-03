@@ -1,11 +1,18 @@
 {
   "user": [
     {
-      "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
-      "phone": "1-770-736-8031 x56442"
+      "name": "Saim Khan",
+      "username": "sktechnical0786@gmail.com",
+      "email": "devadeelbaig@gmail.com",
+      "phone": "03084147317",
+      "id": 1
+    },
+    {
+      "name": "saim",
+      "username": "sadamkhan297",
+      "email": "shujanaqvi288@gmail.com",
+      "phone": "3084147317",
+      "id": 2
     }
   ]
 }

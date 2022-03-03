@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 import axios from "axios";
 
 const Crud = () => {
-  const [users, setUsers] = useState();
+  const [user, setfirst] = useState([]);
   useEffect(() => {
-    onload();
+    loadUsers();
   }, []);
-
-  const onload = async () => {
-    const resault = await axios.get("http://localhost:3003/user");
-    setUsers(resault.data);
-    console.log(resault);
+  const loadUsers = async () => {
+    const result = await axios.get("http://localhost:3003/user");
+    setfirst(result.data);
+  };
+  const DeleteEvent = async (id) => {
+    await axios.delete(`http://localhost:3003/user/${id}`);
+    loadUsers();
   };
   return (
     <>
@@ -35,23 +37,31 @@ const Crud = () => {
             <th>Phone</th>
             <th>Action</th>
           </tr>
-          <tr>
-            {/* <td>{index + 1}</td> */}
-            <td>{users.name}</td>
-            <td>{users.username}</td>
-            <td>{users.email}</td>
-            <td>{users.phone}</td>
-            <NavLink to="/Veiw" className="crudButton">
-              Viwe
-            </NavLink>
-            <NavLink to="/Edit" className="crudButton">
-              Edit
-            </NavLink>
-            <NavLink to="/Delete" className="crudButton">
-              Delete
-            </NavLink>
-          </tr>
-          ;
+          {user.map((preVal, index) => {
+            console.log(preVal.name, "result");
+            return (
+              <tr>
+                <td>{index + 1}</td>
+                <td>{preVal.name}</td>
+                <td>{preVal.username}</td>
+                <td>{preVal.email}</td>
+                <td>{preVal.phone}</td>
+                <Link className="crudButton" to={`/View/${preVal.id}`}>
+                  View
+                </Link>
+                <Link className="crudButton" to={`/Edit/${preVal.id}`}>
+                  Edit
+                </Link>
+                <Link
+                  onClick={() => DeleteEvent(preVal.id)}
+                  className="crudButton"
+                  to=""
+                >
+                  Delete
+                </Link>
+              </tr>
+            );
+          })}
         </table>
       </div>
     </>
