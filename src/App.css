@@ -917,6 +917,60 @@ body {
   justify-content: center;
   background-color: rebeccapurple;
 }
+.crudbNav {
+  width: 100%;
+}
+.crud-div {
+  margin: auto;
+  background: linear-gradient(to bottom, #ff3399 0%, #6600ff 100%);
+}
+.headingCrud {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.crudAddBtn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.crudAddBtn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.crudButton {
+  background: linear-gradient(to bottom, #ff3399 0%, #6600ff 100%);
+  padding: 5px 8px;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.crudButton:hover {
+  background: none;
+  color: black;
+}
 @media only screen and (max-width: 800px) {
   .havbrgr {
     display: inline-flex;
