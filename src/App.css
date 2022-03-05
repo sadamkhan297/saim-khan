@@ -984,6 +984,24 @@ tr:nth-child(even) {
   text-align: center;
   /* align-items: center; */
 }
+.add-container3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* align-items: center; */
+}
+.selectButton {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0;
+}
+.lala {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: red;
+}
 @media only screen and (max-width: 800px) {
   .havbrgr {
     display: inline-flex;

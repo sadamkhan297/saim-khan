@@ -2,17 +2,24 @@
   "user": [
     {
       "name": "Saim Khan",
-      "username": "sktechnical0786@gmail.com",
-      "email": "devadeelbaig@gmail.com",
-      "phone": "03084147317",
+      "username": "sadamkhan297",
+      "email": "sadamkhan297@gmail.com",
+      "phone": "3008364609",
       "id": 1
     },
     {
-      "name": "saim",
-      "username": "sadamkhan297",
+      "name": "Saim Khan",
+      "username": "sktechnical0786@gmail.com",
       "email": "shujanaqvi288@gmail.com",
       "phone": "3084147317",
       "id": 2
+    },
+    {
+      "name": "Saim Khan",
+      "username": "sadamkhan297",
+      "email": "devadeelbaig@gmail.com",
+      "phone": "3084147317",
+      "id": 3
     }
   ]
 }
