@@ -11,6 +11,7 @@ import AddItem from "./AddItem";
 import Veiw from "./Veiw";
 import Edit from "./Edit";
 import Delete from "./Delete";
+import Select from "./Select";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route exect path="/View/:id" element={<Veiw />} />
         <Route exect path="/Edit/:id" element={<Edit />} />
         <Route exect path="/Delete" element={<Delete />} />
+        <Route exect path="/Select" element={<Select />} />
       </Routes>
     </>
   );

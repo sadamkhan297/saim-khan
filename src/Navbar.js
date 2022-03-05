@@ -31,6 +31,9 @@ const Navbar = () => {
               <Link className="navlinks" to="/Crud">
                 Crud
               </Link>
+              <Link className="navlinks" to="/select">
+                Select Button
+              </Link>
             </div>
           </div>
         </div>
